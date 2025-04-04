@@ -1,0 +1,20 @@
+
+class Game {
+        -List<List<int>> board
+        -int score
+        +Game()
+        +void startNewGame()
+        +void move(Direction direction)
+        +bool isGameOver()
+    }
+    class Tile {
+        -int value
+        +Tile(int value)
+    }
+    enum Direction {
+        up,
+        down,
+        left,
+        right
+    }
+    Game --> Tile

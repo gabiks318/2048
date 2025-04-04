@@ -1,0 +1,8 @@
+
+sequenceDiagram
+    participant G as Game
+    participant UI as UI
+    G->>UI: startNewGame()
+    UI->>G: move(direction)
+    G->>G: isGameOver()
+    G->>UI: showGameOverScreen()
